@@ -1,0 +1,39 @@
+@keyframes shimmer {
+  0% {
+    background-color: rgb(230, 230, 230);
+  }
+  50% {
+    background-color: rgb(240, 240, 240);
+  }
+  100% {
+    background-color: rgb(230, 230, 230);
+  }
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.cover_img {
+  width: 80px;
+  height: 105px;
+  background-color: rgb(230, 230, 230);
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+.info_container {
+  flex: 1;
+}
+
+.title,
+.sub_title,
+.author {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(230, 230, 230);
+  margin-bottom: 5px;
+  animation: shimmer 1.5s infinite ease-in-out;
+}
